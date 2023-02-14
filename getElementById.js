@@ -1,3 +1,6 @@
+
+//write an implementation of getElementById which performs the same  basic task as that of actual getElementById(dont use shortcuts like queryselector)
+
 function dom(id) {
     const elements = document.getElementsByTagName('*');
 

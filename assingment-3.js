@@ -1,3 +1,7 @@
+
+//iven a number x find out if it is a prime number  or not  use javascript and find out the difference between  Next prime number  x after x 
+ //below is code in javascript
+ 
 function checkPrime(x) {
     if (x < 2) {
       return false;

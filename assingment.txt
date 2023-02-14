@@ -1,3 +1,6 @@
+demonstrate following concept using javascript language-
+ for,while,continue,if, else, switch?
+ 
 1-//for loop
 
 In JavaScript for loop executes a block of code as long as a specified condition is true.
