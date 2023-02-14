@@ -1,0 +1,207 @@
+1-//for loop
+
+In JavaScript for loop executes a block of code as long as a specified condition is true.
+JavaScript for loops take three arguments:-
+ initialization, condition, and increment.
+The condition expression is evaluated on every loop.
+for loop will continues to run if the expression returns true.
+
+Syntax:-
+for (initialization; condition; increment) {
+	//code
+}
+
+e.g 
+for (let i = 0; i < 5; i++) {
+	console.log(i);
+};
+here for loop will terminate when i >=5
+and it print
+output:
+0
+1
+2
+3
+4
+
+2-while
+
+The while statement will execute a block of code while a condition is true.
+Syntax:-
+while (condition)
+{
+    code to be executed
+}
+
+e.g
+let i=0
+while(i<=5){
+    console.log(i)
+    i++
+}
+output:
+0
+1
+2
+3
+4
+5
+
+
+3- continue
+ Continue Statements are used in loops.like braek statement but it is used for diffrent purpose
+ Unlike break statements, where once the condition is met the loop ends,
+ the Continue Statement is used for skipping over an iteration of a loop.
+
+ to understand continue with example- 
+ for (let i=1; i<=5; i++){
+  if (i === 4) continue;
+  console.log(i);
+}
+output:
+1
+2
+3
+5
+here condition is matched i=4 it will skiped 
+
+4- if/else
+
+if the condition is true to execute the code,
+if the condition is false don’t execute the code.
+condition passes into the parentheses ( ).
+ if(true){
+    //this block will execute
+ }
+
+ if(false){
+    //this block of code will not execute
+ }
+
+
+ 5-else
+ if the condition is true to execute if the condition is false to execute else.
+ if the, if condition returns true the code inside the block, will execute and stop,
+ if condition returns false then else block code will execute
+
+ if(true){
+    //this code will execute  if condition is true
+ }else{
+    //this code will execute  if condition is false
+ }
+
+ 6-switch
+
+ the switch statement is used to run different actions based on different conditions
+ The break statement is optional. If omitted, execution will continue on into the next case.
+
+ switch (expression)
+{
+    case value1:
+        statement1;
+        break;
+    case value2:
+        statement2;
+       break;
+    .
+    .
+    .
+    case valueN:
+        statementN;
+        break;
+    default:
+        return defaultstatement;
+}
+
+e.g
+let num = 5;
+ 
+    switch (num)
+    {
+    case 0:
+        console.log("num is zero.");
+        break;
+    case 1:
+        console.log("num is one.");
+        break;
+    case 2:
+        console.log("num is two.");
+        break;
+    default:
+        console.log("num is greater than 2.");
+    }
+ 
+
+ 7- Recursion 
+ Recursion is a process of calling itself. A function that calls itself is called a recursive function.
+
+The syntax for recursive function is:
+
+function recursion() {
+    // function code
+    recursion();
+    // function code
+}
+
+recursion();
+here  recursion() function is a recursive function. It is calling itself inside the function.
+
+A recursive function must have a condition to stop calling itself. Otherwise, the function is called indefinitely.
+
+Once the condition is met, the function stops calling itself. This is called a base condition.
+To prevent infinite recursion, you can use if...else statement (or similar approach) where one
+ branch makes the recursive call, and the other doesn't.
+
+ function recursion() {
+    if(condition) {
+        recursion();
+    }
+    else {
+        // stop calling recursion()
+    }
+}
+
+recursion();
+
+8- Binary Search Tree
+A binary tree is a data structure, that similarly to a linked list, is made up of nodes.
+A node is a container in which data is stored. In this particular case,
+it stores a value and two pointers, hence binary (2).
+Each pointer will reference another node, one will go left,
+and another right and so on. 
+
+All trees start with a root. Which is the first node
+
+Edge: The connection between two nodes. 
+
+Level: The depth at which a node is found. Starts at 1 from the root, and it increases after each edge.
+
+Leaf: A node that has no children.
+
+Height of a Tree: The height of a tree is the number of edges from the root to the lowest node in the tree.
+
+Perfect Tree: A tree that has the same amount of nodes at every level. Trees are rarely perfect in real-world applications.
+
+Binary Search Trees have one big advantage over linear data structures like arrays and linked lists, and even non-linear ones like regular trees. A BST can be searched in log(n) time.
+
+
+9-Closure
+Closure in JavaScript is a form of lexical scoping used to preserve variables
+ from the outer scope of a function in the inner scope of a function.
+  Lexical scoping is the process used to
+ define the scope of a variable by its position in the source code
+
+ e.g
+
+ function outer(){
+ let b=20
+    function inner(){
+    console.log(b)
+
+    }
+    inner()
+ }
+ outer()
+
+ above e.g here outer() function has b variable which can be accessible from inner() function
+ by using  Closure. In Closure parent variable  can access from child function
